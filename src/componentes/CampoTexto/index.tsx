@@ -1,14 +1,14 @@
 import './CampoTexto.css'
 
 interface CampoTextoProps {
-    obrigatorio: boolean;
+    obrigatorio?: boolean;
     label: string;
     placeholder: string;
     valor: string;
     aoAlterado: (valor: string) => void;
 }
 
-const CampoTexto = ({ aoAlterado, label, obrigatorio, placeholder, valor }: CampoTextoProps) => {
+const CampoTexto = ({ aoAlterado, label, obrigatorio = false, placeholder, valor }: CampoTextoProps) => {
 
     const placeholderModificada = `${placeholder}...` 
 

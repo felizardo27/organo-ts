@@ -3,4 +3,5 @@ export interface ICoraborador {
     cargo: string;
     imagem: string;
     time?: string;
+    data: string;
 } 
